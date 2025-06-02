@@ -4,12 +4,14 @@ p {
     font-weight: bold;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: 350px;
-    z-index: 1001;
+    z-index: 999;
     height: 100%;
     margin: 0;
     padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #4CAF50;
-    border-left: #333 2px solid;
+    border-right: #333 2px solid;
 }
