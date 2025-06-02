@@ -5,7 +5,7 @@ export interface Employee {
     employee_date_of_birth: string;
     employee_email: string;
     employee_phone_number: string;
-    employee_department: string;
+    employee_department: number; // Department ID
     employee_position: string;
     employee_salary: number;
     employee_date_of_joining: string;
