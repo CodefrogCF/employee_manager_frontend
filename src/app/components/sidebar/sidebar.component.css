@@ -1,0 +1,15 @@
+p {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    z-index: 1001;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #4CAF50;
+    border-left: #333 2px solid;
+}
