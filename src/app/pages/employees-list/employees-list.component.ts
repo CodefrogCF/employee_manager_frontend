@@ -27,7 +27,18 @@ export class EmployeesListComponent {
 
     const data = await res.json();
 
-    this.employees.set(data);
+    this.employees.set(data.map((employee: any) => ({
+      id: employee.id,
+      employee_first_name: employee.employee_first_name,
+      employee_last_name: employee.employee_last_name,
+      employee_date_of_birth: employee.employee_date_of_birth,
+      employee_email: employee.employee_email,
+      employee_phone_number: employee.employee_phone_number,
+      employee_department: employee.employee_department,
+      employee_position: employee.employee_position,
+      employee_salary: employee.employee_salary,
+      employee_date_of_joining: employee.employee_date_of_joining
+    })));
 
     console.log('Employees fetched:', this.employees());}
 
