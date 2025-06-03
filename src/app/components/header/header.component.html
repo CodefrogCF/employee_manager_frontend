@@ -1,3 +1,5 @@
 <div class="header">
-    <p>header works!</p>
+    <p>Manager-Manager</p>
+    <app-menu [isOpen]="menuOpen" (closed)="menuOpen = false" />
+    <button class="menu-button" (click)="toggleMenu()">&#9776;</button>
 </div>
